@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<style>
+    @media only screen and (max-width: 600px) {
+        .header-wrapper {
+            flex-direction: column;
+        }
+    }
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bon Voyage</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
 
 <body>
+    <nav>
+        <header>
+            <div class="logo-icon"></div>
+        </header>
 
+        <section class="nav-container">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Our Package</a>
+            <a class="nav-item">Call Us</a>
+        </section>
+    </nav>
+
+    <main>
+        <article class="main-title">
+            <header>
+                <h1>Your Trusted Travel Agent</h1>
+            </header>
+
+            <p>Your Happiness is Our Pleasure</p>
+        </article>
+
+        <section class="main-content">
+            <article class="main-content-item">
+                <div class="main-content-banner"></div>
+                    <div>
+                        <p>"Liburan menjadi lebih menyenangkan dengan Bon Voyage."</p>
+                    </div>
+
+                <div class="main-item">
+                    <div class="item-icon"></div>
+                    
+                    <div>
+                        <h3>Maximilian Alexander</h3>
+                        <p>Pensiunan PNS, 65</p>
+                    </div>
+                </div>
+            </article>
+
+            <form class="main-content-item">
+            <form name="message.form" onsubmit="return validateForm()">
+                <h3 class="form-header">Contact Us</h3>
+                <p class="form-header">Pihak Bon Voyage akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                Nama:
+                <input placeholder="Nama" type="text" name="full-name" name-input required>
+                Email:
+                <input placeholder="Email" type="text" name="Email" Email-input required    >
+                Password:
+                <input placeholder="Password" type="text" name="Password">
+                <input type ="submit" value="Submit">
+            </form>
+                
+        </section>
+    </main>
+    <script src="js\script.js"></script>
 </body>
 
 </html>
